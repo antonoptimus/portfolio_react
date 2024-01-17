@@ -1,12 +1,7 @@
-import "./styles/main.css";
-
-import vk from "./img/icons/vk.svg";
-import instagram from "./img/icons/instagram.svg";
-import linkedIn from "./img/icons/linkedIn.svg";
-import twitter from "./img/icons/twitter.svg";
-import gitHub from "./img/icons/gitHub.svg";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import "./styles/main.css";
 
 function App() {
   return (
@@ -33,43 +28,7 @@ function App() {
           </ul>
         </div>
       </main>
-
-      <footer className="footer">
-        <div className="container">
-          <div className="footer__wrapper">
-            <ul className="socials">
-              <li className="social__item">
-                <a href="#">
-                  <img src={vk} alt="Link" />
-                </a>
-              </li>
-              <li className="social__item">
-                <a href="#">
-                  <img src={instagram} alt="Link" />
-                </a>
-              </li>
-              <li className="social__item">
-                <a href="#">
-                  <img src={twitter} alt="Link" />
-                </a>
-              </li>
-              <li className="social__item">
-                <a href="#">
-                  <img src={gitHub} alt="Link" />
-                </a>
-              </li>
-              <li className="social__item">
-                <a href="#">
-                  <img src={linkedIn} alt="Link" />
-                </a>
-              </li>
-            </ul>
-            <div className="copyright">
-              <p>© 2024 frontend-dev.com</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }
