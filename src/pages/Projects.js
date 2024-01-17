@@ -1,6 +1,6 @@
-import React from "react";
-import project from "../img/projects/01.jpg";
 import Project from "../components/project/Project";
+import { projects } from "../helpers/projectList";
+
 const Projects = () => {
   return (
     <>
@@ -8,7 +8,13 @@ const Projects = () => {
         <div className="container">
           <h2 className="title-1">Projects</h2>
           <ul className="projects">
-            <Project/>
+            {projects.map((project) => (
+              <Project
+                title={project.title}
+                img={project.img}
+                key={project.title}
+              />
+            ))}
           </ul>
         </div>
       </main>

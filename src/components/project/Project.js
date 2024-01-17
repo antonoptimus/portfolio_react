@@ -2,13 +2,13 @@ import React from "react";
 import "./style.css";
 import project from "../../img/projects/01.jpg";
 
-const Project = () => {
+const Project = ({img, title}) => {
   return (
     <>
       <li className="project">
         <a href="./project-page.html">
-          <img src={project} alt="Project" className="project__image" />
-          <h3 className="project__title">Mern blog</h3>
+          <img src={img} alt={title} className="project__image" />
+          <h3 className="project__title">{title}</h3>
         </a>
       </li>
     </>
