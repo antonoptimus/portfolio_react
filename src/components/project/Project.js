@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
-const Project = ({img, title}) => {
+const Project = ({ img, title, index }) => {
   return (
     <>
-      <li className="project">
-        <a href="./project-page.html">
+      <Link to={`/project/${index}`}>
+        <li className="project">
           <img src={img} alt={title} className="project__image" />
           <h3 className="project__title">{title}</h3>
-        </a>
-      </li>
+        </li>
+      </Link>
     </>
   );
 };

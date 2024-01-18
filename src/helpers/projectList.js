@@ -23,6 +23,7 @@ const projects = [
     img: project01,
     imgBig: project01Big,
     gitHubLink: "https://github.com",
+    id: 1
   },
   {
     title: "Video service",
@@ -30,6 +31,7 @@ const projects = [
     imgBig: project02Big,
     skills: "React, PHP, MySql",
     gitHubLink: "https://github.com",
+    id: 2
   },
   {
     title: "Video portal",
@@ -37,24 +39,28 @@ const projects = [
     imgBig: project03Big,
     skills: "Vue JS, Node.js, MongoDB",
     gitHubLink: "https://github.com",
+    id: 3
   },
   {
     title: "Dating app",
     img: project04,
     imgBig: project04Big,
     skills: "React Native",
+    id: 4
   },
   {
     title: "Landing",
     img: project05,
     imgBig: project05Big,
     skills: "HTML, SCSS, JS",
+    id: 5
   },
   {
     title: "Gaming community",
     img: project06,
     imgBig: project06Big,
     skills: "React, PHP, MySql",
+    id: 6
   },
 ];
 
